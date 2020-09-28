@@ -15,5 +15,5 @@ Select the text you wrote in visual mode, type `,th`, then a composing window of
 
 ## ToDo
 
-- Extract to, cc, and subject lines from vim's buffer and fill those field based on the extracted info
+- Extract to, cc, and subject lines from vim's buffer and fill those fields on the composing window based on the extracted info
 - Delete the temporary file after composing finished
