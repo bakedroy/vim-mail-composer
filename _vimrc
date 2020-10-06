@@ -1,7 +1,7 @@
 function! ComposeMessage(cmdpat)
     let [l:qr, l:qt] = [getreg('"'), getregtype('"')] 
     silent norm! gvy
-    let l:body = substitute(@", '\n', '\r\n', 'g')
+    let l:body = substitute(@", '\n', '\r', 'g')
     let l:bodyfile= 'Path-To-Temp-File'
     if writefile([l:body], l:bodyfile)
         echom 'Failed to write to a temp file.'
