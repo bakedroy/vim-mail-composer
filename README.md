@@ -7,13 +7,26 @@ I love vim but it is not a email client. To write my email in vim on Windows dev
 ## Installation
 
 - Paste the code into your `vimrc`.
-- Modifiy `Path-To-Temp-File` and `Path-To-Thunderbird-Exe` as you wish
+- Modify `Path-To-Temp-File` and `Path-To-Thunderbird-Exe` as you wish
 
 ## Usage
 
-Select the text you wrote in visual mode, type `,th`, then a composing window of Thunderbid will be appeared.
+Select the text you wrote in visual mode, type `,th`, then a composing window of Thunderbird will be appeared.
+
+
+### Format
+
+Mail format is as follows:
+```
+Subject: A test mail
+Dear John Doe,
+
+...
+```
+
+If `subject:XXX` line is set on the top of your selected area, the line is set as the subject of your message.
 
 ## ToDo
 
-- Extract to, cc, and subject lines from vim's buffer and fill those fields on the composing window based on the extracted info
-- Delete the temporary file after composing finished
+- Extract to and cc lines from vim's buffer and fill those fields on the composing window based on the extracted info
+- Delete the temporary file after composing finished (currently I tried it but removed before the file passed to a mailer)
