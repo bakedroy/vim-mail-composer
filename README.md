@@ -8,11 +8,15 @@ I love vim but it is not a email client. To write my email in vim on Windows dev
 
 - Paste the code into your `vimrc`.
 - Modify `Path-To-Temp-File` and `Path-To-Thunderbird-Exe` as you wish
+- I've tested on the following environment
+    - Windows 10 (10.0.18363.1082)
+    - Thunderbird 78.3.1 (32-bit)
+    - NVIM v0.5.0-416-g2b00d1d09 (-acl +iconv +tui)
 
 ## Usage
 
 Select the text you wrote in visual mode, type `,th`, then a composing window of Thunderbird will be appeared.
-
+Currently, only Thunderbird is supported.
 
 ### Format
 
